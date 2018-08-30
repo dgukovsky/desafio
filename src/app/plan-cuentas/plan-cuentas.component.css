@@ -1,0 +1,19 @@
+.table-container {
+  overflow: auto;
+}
+table {
+  width: 100%;
+}
+.sidebar {
+  background: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.sidebar mat-list-item {
+  color: white;
+  cursor: pointer;
+}
+mat-card-content > div {
+  padding: 20px;
+}

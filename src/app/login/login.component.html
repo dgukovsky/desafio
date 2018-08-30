@@ -1,0 +1,19 @@
+<div class="login-container">
+  <div class="login-layer"></div>
+  <div class="login-wrapper">
+    <div class="login-logo">
+      <img src="assets/images/medinet.svg">
+    </div>
+    <form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+      <div  *ngIf="success == false" class="text-danger text-center">{{ message }}</div>
+      
+      <mat-form-field>
+        <input matInput placeholder="Usuario" formControlName="username">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Contraseña" formControlName="password">
+      </mat-form-field>
+      <button mat-raised-button color="primary" [disabled]="loading" >Login</button>
+    </form>
+  </div>
+</div>
