@@ -7,6 +7,7 @@ import { AuthService} from './services/auth.service';
 import { PlanCuentasService} from './services/plan-cuentas.service';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthGuard} from './services/auth.guard';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {AuthGuard} from './services/auth.guard';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [
     AuthGuard,

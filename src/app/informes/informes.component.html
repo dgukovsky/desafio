@@ -1,0 +1,168 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="assets/images/medinet.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Agenda <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pacientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recaudación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CRM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hospital</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Bodega</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Administración</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+      </form>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mi cuenta</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Informes</h3>
+      <span>Dashboard > <b>CRM</b></span>
+      <mat-card class="mb-3 mt-3">
+        <mat-card-content>
+          <h5 class="text-center mb-3">Tipo de informe</h5>
+          <mat-radio-group>
+            <div class="row pl-5 pr-5">
+              <div class="col-6 text-center pr-1">
+                <div><b>Embudo</b></div>
+                <mat-radio-button value="1"></mat-radio-button>
+              </div>
+              <div class="col-6 text-center pl-1">
+                <div><b>Indicadores</b></div>
+                <mat-radio-button value="2"></mat-radio-button>
+              </div>
+            </div>
+
+
+          </mat-radio-group>
+
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+
+        <mat-card-content>
+          <h5 class="text-center">Filtros</h5>
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Sucursal</label>
+              <select class="form-control">
+                <option>Santiago</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Proceso</label>
+              <select class="form-control">
+                <option>General</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Periodo</label>
+              <div class="row">
+                <div class="col-6">
+                  <select class="form-control">
+                    <option>2018</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <select class="form-control">
+                    <option>Enero</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-sm-8">
+      <div class="row">
+        <div class="col-sm-12">
+
+        </div>
+      </div>
+      <mat-tab-group class="mt-4 pt-2"  [color]="'primary'" [backgroundColor]="'primary'">
+        <mat-tab>
+          <ng-template mat-tab-label>
+            Operacional
+          </ng-template>
+          <mat-card>
+            <mat-card-content>
+              Operacional
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            Financiero
+          </ng-template>
+          <mat-card>
+            <mat-card-content>
+              Financiero
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            CRM
+          </ng-template>
+          <mat-card>
+            <mat-card-content>
+              CRM
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            Casos
+          </ng-template>
+          <mat-card>
+            <mat-card-content>
+              Casos
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            Monitoreo GES
+          </ng-template>
+          <mat-card>
+            <mat-card-content>
+              Monitoreo GES
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+    </mat-tab-group>
+
+    </div>
+  </div>
+</div>

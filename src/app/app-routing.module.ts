@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full', canActivate: [AuthGuard]},
   { path: 'login', loadChildren: './login/login.module#LoginModule'},
   { path: 'plan-cuentas', loadChildren: './plan-cuentas/plan-cuentas.module#PlanCuentasModule', canActivate: [AuthGuard]},
+    { path: 'informes', loadChildren: './informes/informes.module#InformesModule', canActivate: [AuthGuard]},
   { path: '**', redirectTo: 'not-found' }
 ];
 
