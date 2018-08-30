@@ -44,7 +44,6 @@ export class PlanCuentasComponent implements OnInit {
         data => {
           this.dataSource = new MatTableDataSource<any>(data);
           this.dataSource.paginator = this.paginator;
-          console.log(data);
         },
         error => {
           console.log(error);

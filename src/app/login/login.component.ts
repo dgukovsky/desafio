@@ -35,7 +35,6 @@ export class LoginComponent implements OnInit {
 
   onSubmit(values): void {
     this.submitted = true;
-    console.log(values);
 
       this.loading = true;
       this.auth.login(values.username, values.password)
