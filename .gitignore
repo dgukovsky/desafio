@@ -1,1 +1,8 @@
+# compiled output
+
+/dist-server
+/tmp
+/out-tsc
+
+# dependencies
 /node_modules
