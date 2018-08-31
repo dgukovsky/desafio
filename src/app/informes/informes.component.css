@@ -21,7 +21,7 @@ mat-card-content > div {
   height: 100% !important;
 }
 mat-tab-group mat-card {
-  height: 478px;
+  height: 539px;
   overflow: auto;
   margin: 5px 2px;
 
@@ -73,4 +73,7 @@ mat-tab-group mat-tab-body-wrapper {
 }
 .navbar-nav .nav-item.active .nav-link span {
   color: white;
+}
+.btn-success {
+  background: rgb(53, 207, 120);
 }
