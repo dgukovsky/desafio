@@ -31,4 +31,46 @@ mat-tab-group mat-tab-body-wrapper {
 }
 .navbar {
   background: #20ccbf;
+  padding: 0;
+}
+.navbar-nav .nav-item.active {
+  background: rgb(78, 100, 139);
+}
+
+.navbar-nav .nav-link {
+  text-align: center;
+    color: white;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.navbar-nav .nav-link i {
+    display: block;
+}
+.navbar-nav .search input{
+  max-width: 150px;
+}
+.navbar-nav .notification {
+  position: relative;
+}
+.navbar-nav .notification span {
+  font-size: 10px;
+  position: absolute;
+  background: #fa5399;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 3px;
+  left: 5px;
+  top: 5px;
+}
+.navbar-nav .notification i {
+  font-size: 36px;
+}
+
+.navbar-nav .nav-item.active .nav-link i {
+  color: #20ccbf;
+}
+.navbar-nav .nav-item.active .nav-link span {
+  color: white;
 }

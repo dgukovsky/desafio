@@ -3,3 +3,26 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
+.mat-tab-label {
+  border: 2px solid #6f92fe;
+  border-right: none;
+  color: #6f92fe;
+}
+.mat-tab-label:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.mat-tab-label:last-child {
+  border-right: 2px solid #6f92fe;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.mat-tab-label-active {
+  color: white;
+  background-color: #6f92fe;
+}
+@media (min-width:1200px) {
+  .container {
+    max-width: 1245px;
+  }
+}
